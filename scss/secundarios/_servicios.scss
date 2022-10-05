@@ -1,0 +1,35 @@
+/* estilos de servicios */
+
+.main-servicios div {
+    @extend %flex;
+
+    h3 {
+        color: rgb(158, 158, 165);
+        font-family: $font;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 3px $color-shadow;
+    }
+    
+    p {
+        display: flex;
+        text-align: justify;
+        font-family: $font3;
+        font-size: 1.2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    
+    }
+
+    img {
+        display: flex;
+        @include sizes(250px, 450px);
+        border-radius: 25px;
+        box-shadow: 3px 3px 5px $color-shadow;
+}
+}
+
+
+

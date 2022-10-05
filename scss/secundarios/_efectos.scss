@@ -1,0 +1,43 @@
+/*gradiente del texto*/
+
+.textogradiente {
+    display: flex;
+    filter:drop-shadow(1px 1px 2px $color-shadow);
+    font-size: 4rem;
+    text-align: center;
+    background: linear-gradient(to left, #454a50 20%, #757377 40%, #f5f5f5 60%, #454a50 80%);
+    background-size: 200% auto;
+    text-decoration: bold;
+    color: $color-shadow;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+     }
+
+    @keyframes shine {
+  to {
+    background-position: 200% center; } }
+
+    .textogradiente-2 {
+      display: flex;
+      filter:drop-shadow(1px 1px 2px $color-shadow);
+      font-family: $font3;
+      font-size: 6rem;
+      text-align: center;
+      background: linear-gradient(to left,  #0e488f 20%, #7273ad 40%, #cdccdf 60%, #0e488f 80%);
+      background-size: 200% auto;
+      text-decoration: bold;
+      color: $color-shadow;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 5s linear infinite;
+       }
+  
+      @keyframes shine {
+    to {
+      background-position: 200% center; } }
+
+
+

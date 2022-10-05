@@ -1,0 +1,137 @@
+/* media queries */ 
+
+/* mq nosotros */
+
+@media screen and (min-width:800px) {
+
+.main-nosotros {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-areas:
+            
+            "h2 img"
+            "p-uno img"
+            "p-dos img";
+
+    /*alineacion */
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .main-nosotros .p-uno {
+        grid-area: p-uno;
+        text-align: justify;
+        margin: 0.5rem;
+        font-family: $font;
+    }
+
+    .main-nosotros img {
+        grid-area: img;
+        width: 95%;
+        margin-top: 7rem;
+        filter: drop-shadow(4px 3px 2px $color-shadow);
+    }
+
+    .main-nosotros .p-dos {
+        grid-area: p-dos;
+        text-align:justify;
+        margin: 0.5rem;
+        font-family: $font;
+        text-decoration: double;
+        
+    }   
+    }
+
+
+/* mq servicios */
+
+@media screen and (min-width:800px) {
+    .main-servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto ;
+        grid-template-areas: 
+            "h3-uno h3-dos h3-tres"
+            "img-uno img-dos img-tres"
+             "p-uno p-dos p-tres"
+             "boton boton boton";
+    
+    }
+    
+    .main-servicios .h3-uno {
+        grid-area: h3-uno;
+    }
+    
+    .main-servicios .h3-dos {
+        grid-area: h3-dos;
+    
+    }
+    
+    .main-servicios .h3-tres {
+        grid-area: h3-tres;
+    
+    }
+
+    .main-servicios .boton {
+        grid-area: boton;
+    }
+    
+    .main-servicios .img-uno {
+        grid-area: img-uno;
+        width: 250px;
+        height: 450px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 5px $color-shadow;
+    }
+    .main-servicios .img-dos {
+        grid-area: img-dos;
+        width: 250px;
+        height: 450px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 5px $color-shadow;
+    }
+    
+    .main-servicios .img-tres {
+        grid-area: img-tres;
+        width: 250px;
+        height: 450px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 5px $color-shadow;
+    }
+    
+    .main-servicios .p-uno {
+        grid-area: p-uno;
+        text-align: justify;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .main-servicios .p-dos {
+        grid-area: p-dos;
+        text-align: justify;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .main-servicios .p-tres {
+        grid-area: p-tres;
+        text-align: justify;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    }
+
+    /* mq nav */
+    @media screen and (max-width:950px) {
+        #logo {
+            display: none;
+        }
+    }

@@ -1,0 +1,14 @@
+  /* hover imagenes */
+
+  main {
+    div {
+        .galeria-hover {
+            transition: 1s;
+        
+            &:hover {
+              transform: scale(1.07);
+            
+            }
+    }
+  }
+  }
