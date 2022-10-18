@@ -3,24 +3,28 @@
 /* estilos del footer */
 
 .footer-1 {
-    background-color:  rgba(0, 0, 0, 0.568);
+    background: linear-gradient(to bottom, $color-fondo-nav3, $color-fondo-nav2, $color-fondo-nav);
     margin-top: 1rem;
-}
+    bottom: 0%;
+    }
 
-.logos_redes {
+.logos-redes {
     margin: 0.5rem;
     height: 4%;
     width: 4%;
     transition: 0.5s;
+    
     &:hover {
         transform:scale(1.1);
-        filter:drop-shadow(1px 1px 1px $color-hover);       
+        filter:drop-shadow(1px 1px 1px $color-hover);
+               
 }
 }
     
 .footer-2 {
         background-color:   rgba(0, 0, 0, 0.2);
         font-size: 1rem;
+
     }
 
     div{

@@ -1,5 +1,41 @@
 /* media queries */ 
 
+
+/* mq index */
+@media screen and (min-width:715px) {
+    .indexcel {
+        display: none;
+    }
+
+}
+    
+
+
+@media screen and (max-width:715px) {
+
+    main {
+        .eslogan {
+        display: block;
+        text-align: center;
+        font-family: $font4;  
+        text-shadow: 1px 1px 3px $color-shadow;
+        font-size: 2rem;
+        margin-top: 0.7rem;
+        }  
+          
+        .calesita {
+            display: none; 
+          }
+        
+        .celpho {
+            display: flex;
+            width: 100%;
+            
+        }
+        
+        }
+    }
+
 /* mq nosotros */
 
 @media screen and (min-width:800px) {
@@ -8,7 +44,7 @@
         padding: 1rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
         grid-template-areas:
             
             "h2 img"
@@ -42,7 +78,8 @@
         text-decoration: double;
         
     }   
-    }
+
+   }
 
 
 /* mq servicios */
@@ -76,20 +113,21 @@
 
     .main-servicios .boton {
         grid-area: boton;
+        
     }
     
     .main-servicios .img-uno {
         grid-area: img-uno;
         width: 250px;
         height: 450px;
-        border-radius: 25px;
+        border-radius: 5px 40px;
         box-shadow: 3px 3px 5px $color-shadow;
     }
     .main-servicios .img-dos {
         grid-area: img-dos;
         width: 250px;
         height: 450px;
-        border-radius: 25px;
+        border-radius: 5px 40px;
         box-shadow: 3px 3px 5px $color-shadow;
     }
     
@@ -97,7 +135,7 @@
         grid-area: img-tres;
         width: 250px;
         height: 450px;
-        border-radius: 25px;
+        border-radius: 5px 40px;
         box-shadow: 3px 3px 5px $color-shadow;
     }
     

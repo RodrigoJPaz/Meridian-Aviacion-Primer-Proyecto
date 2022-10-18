@@ -4,53 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*gradiente del texto*/
-.textogradiente {
-  display: flex;
-  filter: drop-shadow(1px 1px 2px black);
-  font-size: 4rem;
-  text-align: center;
-  background: linear-gradient(to left, #454a50 20%, #757377 40%, #f5f5f5 60%, #454a50 80%);
-  background-size: 200% auto;
-  text-decoration: bold;
-  color: black;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite; }
-
-@keyframes shine {
-  to {
-    background-position: 200% center; } }
-
-.textogradiente-2 {
-  display: flex;
-  filter: drop-shadow(1px 1px 2px black);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 6rem;
-  text-align: center;
-  background: linear-gradient(to left, #0e488f 20%, #7273ad 40%, #cdccdf 60%, #0e488f 80%);
-  background-size: 200% auto;
-  text-decoration: bold;
-  color: black;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite; }
-
-@keyframes shine {
-  to {
-    background-position: 200% center; } }
-
-/* hover imagenes */
-main div .galeria-hover {
-  transition: 1s; }
-  main div .galeria-hover:hover {
-    transform: scale(1.07); }
-
 /*estilos del nav*/
 .color-nav {
-  background-color: rgba(105, 113, 114, 0.795); }
+  background: linear-gradient(to bottom, rgba(105, 113, 114, 0.89), #918f8f, #eaecf1); }
 
 .position {
   position: sticky;
@@ -65,15 +21,10 @@ main div .galeria-hover {
     .position nav div .nav-text-style a {
       color: aliceblue; }
     .position nav div .nav-text-style:hover {
-      transform: scale(1.05);
-      --angle: 0deg;
-      border-image: linear-gradient(var(--angle), #7431DD, #dd31dd) 1;
-      animation: 2s rotate linear infinite;
-      color: #7431DD;
+      transform: scale(1.03);
       background: linear-gradient(to right, #318add 20%, #757377 40%, #feffff 60%, #318add 80%);
       background-size: 200% auto;
       text-decoration: bold;
-      color: #000;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -98,7 +49,10 @@ body {
 /* estilos del home */
 main .eslogan {
   text-align: center;
-  font-family: "Pacifico", cursive; }
+  font-family: "Great Vibes", cursive;
+  text-shadow: 1px 1px 3px black;
+  font-size: 4rem;
+  margin-top: 0.7rem; }
 
 /* estilos del carousel */
 main div .carousel {
@@ -108,13 +62,14 @@ main div .carousel {
   bottom: 10rem; }
 
 .carousel-item {
-  height: 37rem; }
+  height: 39rem; }
   .carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 40rem; }
+    height: 100%;
+    opacity: 60%; }
 
 /*estilos de nosotros */
 .main-nosotros {
@@ -126,15 +81,28 @@ main div .carousel {
   .main-nosotros p {
     display: flex;
     text-align: justify;
-    margin: 1rem; }
+    margin: 1rem;
+    letter-spacing: 0.1rem; }
+
+/* hover imagenes */
+main div .galeria-hover {
+  transition: 1s; }
+  main div .galeria-hover:hover {
+    transform: scale(1.04); }
 
 /* estilos de servicios */
-.main-servicios div h3 {
-  color: #9e9ea5;
-  font-family: "Varela Round", sans-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 3px black; }
+.main-servicios div .subtitulo {
+  color: rgba(105, 113, 114, 0.89); }
+  .main-servicios div .subtitulo:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #318add 20%, #757377 40%, #feffff 60%, #318add 80%);
+    background-size: 200% auto;
+    text-decoration: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+    filter: drop-shadow(1px 1px 1px black); }
 
 .main-servicios div p {
   display: flex;
@@ -144,26 +112,31 @@ main div .carousel {
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 2rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  letter-spacing: 0.15; }
 
 .main-servicios div img {
   display: flex;
   width: 250px;
   height: 450px;
-  border-radius: 25px;
+  border-radius: 5px 40px;
   box-shadow: 3px 3px 5px black; }
+
+.main-servicios div .nolink {
+  text-decoration: none; }
 
 /* estilos del footer */
 .footer-1 {
-  background-color: rgba(0, 0, 0, 0.568);
-  margin-top: 1rem; }
+  background: linear-gradient(to bottom, #eaecf1, #918f8f, rgba(105, 113, 114, 0.89));
+  margin-top: 1rem;
+  bottom: 0%; }
 
-.logos_redes {
+.logos-redes {
   margin: 0.5rem;
   height: 4%;
   width: 4%;
   transition: 0.5s; }
-  .logos_redes:hover {
+  .logos-redes:hover {
     transform: scale(1.1);
     filter: drop-shadow(1px 1px 1px #0011ff); }
 
@@ -175,13 +148,32 @@ div h2 {
   font-size: 1rem; }
 
 /* media queries */
+/* mq index */
+@media screen and (min-width: 715px) {
+  .indexcel {
+    display: none; } }
+
+@media screen and (max-width: 715px) {
+  main .eslogan {
+    display: block;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    text-shadow: 1px 1px 3px black;
+    font-size: 2rem;
+    margin-top: 0.7rem; }
+  main .calesita {
+    display: none; }
+  main .celpho {
+    display: flex;
+    width: 100%; } }
+
 /* mq nosotros */
 @media screen and (min-width: 800px) {
   .main-nosotros {
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
     grid-template-areas: "h2 img" "p-uno img" "p-dos img";
     /*alineacion */
     justify-content: center;
@@ -222,19 +214,19 @@ div h2 {
     grid-area: img-uno;
     width: 250px;
     height: 450px;
-    border-radius: 25px;
+    border-radius: 5px 40px;
     box-shadow: 3px 3px 5px black; }
   .main-servicios .img-dos {
     grid-area: img-dos;
     width: 250px;
     height: 450px;
-    border-radius: 25px;
+    border-radius: 5px 40px;
     box-shadow: 3px 3px 5px black; }
   .main-servicios .img-tres {
     grid-area: img-tres;
     width: 250px;
     height: 450px;
-    border-radius: 25px;
+    border-radius: 5px 40px;
     box-shadow: 3px 3px 5px black; }
   .main-servicios .p-uno {
     grid-area: p-uno;
@@ -268,3 +260,41 @@ div h2 {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+/*gradiente del texto*/
+.textogradiente {
+  display: flex;
+  filter: drop-shadow(1px 1px 2px black);
+  font-size: 4rem;
+  text-align: center;
+  background: linear-gradient(to left, #454a50 20%, #757377 40%, #f5f5f5 60%, #454a50 80%);
+  background-size: 200% auto;
+  text-decoration: bold;
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite; }
+
+@keyframes shine {
+  to {
+    background-position: 200% center; } }
+
+.textogradiente-2 {
+  display: flex;
+  filter: drop-shadow(1px 1px 2px black);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 6rem;
+  text-align: center;
+  background: linear-gradient(to left, #0e488f 20%, #7273ad 40%, #cdccdf 60%, #0e488f 80%);
+  background-size: 200% auto;
+  text-decoration: bold;
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite; }
+
+@keyframes shine {
+  to {
+    background-position: 200% center; } }

@@ -1,7 +1,7 @@
 
 /*estilos del nav*/
 .color-nav {
-    background-color: $color-fondo-nav;
+    background: linear-gradient(to bottom, $color-fondo-nav, $color-fondo-nav2, $color-fondo-nav3)
 }
 
 
@@ -24,15 +24,10 @@
                     }
                 
                     &:hover{
-                        transform: scale(1.05);
-                        --angle: 0deg;
-                        border-image: linear-gradient(var(--angle), #7431DD, #dd31dd) 1;
-                        animation: 2s rotate linear infinite;
-                        color: #7431DD;
+                        transform: scale(1.03);
                         background: linear-gradient(to right, #318add 20%, #757377 40%, #feffff 60%, #318add 80%);
                         background-size: 200% auto;
                         text-decoration: bold;
-                        color: #000;
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;

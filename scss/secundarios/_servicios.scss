@@ -3,12 +3,22 @@
 .main-servicios div {
     @extend %flex;
 
-    h3 {
-        color: rgb(158, 158, 165);
-        font-family: $font;
-        font-size: 2rem;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 3px $color-shadow;
+    .subtitulo {
+        color: $color-fondo-nav;
+
+        &:hover{
+            transform: scale(1.03);
+            background: linear-gradient(to right, #318add 20%, #757377 40%, #feffff 60%, #318add 80%);
+            background-size: 200% auto;
+            text-decoration: bold;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 5s linear infinite; 
+            filter: drop-shadow(1px 1px 1px black);
+            
+        }
+        
     }
     
     p {
@@ -20,15 +30,20 @@
         margin-right: 3rem;
         margin-bottom: 2rem;
         margin-top: 1rem;
+        letter-spacing: 0.15;
     
     }
 
     img {
         display: flex;
         @include sizes(250px, 450px);
-        border-radius: 25px;
+        border-radius: 5px 40px;
         box-shadow: 3px 3px 5px $color-shadow;
+    
 }
+    .nolink {
+        text-decoration: none;
+    }
 }
 
 
