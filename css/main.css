@@ -140,7 +140,7 @@ div h2 {
 
 /* media queries */
 /* mq index */
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 600px) {
   main .eslogan {
     text-align: center;
     font-family: "Great Vibes", cursive;
@@ -167,7 +167,7 @@ div h2 {
       opacity: 60%; }
   /* mq nosotros */ }
 
-@media screen and (min-width: 761px) and (min-width: 761px) {
+@media screen and (min-width: 600px) and (min-width: 761px) {
   .main-nosotros {
     padding: 1rem;
     display: grid;
@@ -194,10 +194,10 @@ div h2 {
     font-family: "Varela Round", sans-serif;
     text-decoration: double; } }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 600px) {
   /* mq servicios */ }
 
-@media screen and (min-width: 761px) and (min-width: 780px) {
+@media screen and (min-width: 600px) and (min-width: 780px) {
   .main-servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
