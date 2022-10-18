@@ -11,7 +11,7 @@
     
 
 
-@media screen and (max-width:715px) {
+@media screen and (max-width:760px) {
 
     main {
         .eslogan {
@@ -30,15 +30,13 @@
         .celpho {
             display: flex;
             width: 100%;
-            
-        }
-        
         }
     }
+}
 
 /* mq nosotros */
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:760px) {
 
 .main-nosotros {
         padding: 1rem;
@@ -78,13 +76,12 @@
         text-decoration: double;
         
     }   
-
-   }
+}
 
 
 /* mq servicios */
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:760px) {
     .main-servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -94,7 +91,6 @@
             "img-uno img-dos img-tres"
              "p-uno p-dos p-tres"
              "boton boton boton";
-    
     }
     
     .main-servicios .h3-uno {
