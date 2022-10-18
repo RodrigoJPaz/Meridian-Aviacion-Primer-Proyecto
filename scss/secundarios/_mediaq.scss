@@ -2,41 +2,54 @@
 
 
 /* mq index */
-@media screen and (min-width:715px) {
-    .indexcel {
-        display: none;
-    }
 
-}
-    
-
-
-@media screen and (max-width:760px) {
-
+@media screen and (min-width:761px) {
     main {
         .eslogan {
-        display: block;
-        text-align: center;
-        font-family: $font4;  
-        text-shadow: 1px 1px 3px $color-shadow;
-        font-size: 2rem;
-        margin-top: 0.7rem;
-        }  
-          
-        .calesita {
-            display: none; 
+          text-align: center;
+          font-family: $font4;  
+          text-shadow: 1px 1px 3px $color-shadow;
+          font-size: 4rem;
+          margin-top: 0.7rem;
           }
         
         .celpho {
-            display: flex;
-            width: 100%;
+            display: none;
+        }
+
+        .calesita {
+            display: block;
         }
     }
-}
+      
+      
+      /* estilos del carousel */
+      main  div .carousel {
+          margin-bottom: 6rem; 
+        }
+          .carousel-caption {
+            bottom: 10rem; 
+          }
+          .carousel-item {
+            height: 39rem; 
+      
+      
+            img {
+              position:absolute;
+              top: 0;
+              left: 0;
+              min-width: 100%;
+              height: 100%;
+              opacity: 60%;
+            }
+
+          }
+      
+
 
 /* mq nosotros */
 
-@media screen and (min-width:760px) {
+@media screen and (min-width:761px) {
 
 .main-nosotros {
         padding: 1rem;
@@ -81,7 +94,7 @@
 
 /* mq servicios */
 
-@media screen and (min-width:760px) {
+@media screen and (min-width:780px) {
     .main-servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -161,11 +174,5 @@
         margin-bottom: 2rem;
         margin-top: 1rem;
     }
-    }
+    }}
 
-    /* mq nav */
-    @media screen and (max-width:950px) {
-        #logo {
-            display: none;
-        }
-    }

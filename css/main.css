@@ -48,28 +48,19 @@ body {
 
 /* estilos del home */
 main .eslogan {
+  display: block;
   text-align: center;
   font-family: "Great Vibes", cursive;
   text-shadow: 1px 1px 3px black;
-  font-size: 4rem;
+  font-size: 2rem;
   margin-top: 0.7rem; }
 
-/* estilos del carousel */
-main div .carousel {
-  margin-bottom: 6rem; }
+main .calesita {
+  display: none; }
 
-.carousel-caption {
-  bottom: 10rem; }
-
-.carousel-item {
-  height: 39rem; }
-  .carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100%;
-    opacity: 60%; }
+main .celpho {
+  display: flex;
+  width: 100%; }
 
 /*estilos de nosotros */
 .main-nosotros {
@@ -149,26 +140,34 @@ div h2 {
 
 /* media queries */
 /* mq index */
-@media screen and (min-width: 715px) {
-  .indexcel {
-    display: none; } }
-
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 761px) {
   main .eslogan {
-    display: block;
     text-align: center;
     font-family: "Great Vibes", cursive;
     text-shadow: 1px 1px 3px black;
-    font-size: 2rem;
+    font-size: 4rem;
     margin-top: 0.7rem; }
-  main .calesita {
-    display: none; }
   main .celpho {
-    display: flex;
-    width: 100%; } }
+    display: none; }
+  main .calesita {
+    display: block; }
+  /* estilos del carousel */
+  main div .carousel {
+    margin-bottom: 6rem; }
+  .carousel-caption {
+    bottom: 10rem; }
+  .carousel-item {
+    height: 39rem; }
+    .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 100%;
+      opacity: 60%; }
+  /* mq nosotros */ }
 
-/* mq nosotros */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 761px) and (min-width: 761px) {
   .main-nosotros {
     padding: 1rem;
     display: grid;
@@ -195,8 +194,10 @@ div h2 {
     font-family: "Varela Round", sans-serif;
     text-decoration: double; } }
 
-/* mq servicios */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 761px) {
+  /* mq servicios */ }
+
+@media screen and (min-width: 761px) and (min-width: 780px) {
   .main-servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -249,11 +250,6 @@ div h2 {
     margin-right: 3rem;
     margin-bottom: 2rem;
     margin-top: 1rem; } }
-
-/* mq nav */
-@media screen and (max-width: 950px) {
-  #logo {
-    display: none; } }
 
 /* extend scss */
 .main-servicios div {
