@@ -10,11 +10,11 @@ body {
 main {
 
   .h1-mobile {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .h3-mobile {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   #eslogan {
@@ -41,7 +41,7 @@ main {
   section {
     #img-cel {
       display: flex;
-      @include sizes(450px, 250px);
+      @include sizes(420px, 210px);
       border-radius: 5px 40px;
       box-shadow: 3px 3px 5px $color-shadow;
     }

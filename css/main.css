@@ -51,10 +51,10 @@ body {
   background-color: #e5ebeb; }
 
 main .h1-mobile {
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 main .h3-mobile {
-  font-size: 1rem; }
+  font-size: 2rem; }
 
 main #eslogan {
   display: block;
@@ -75,8 +75,8 @@ main .calesita {
 
 main section #img-cel {
   display: flex;
-  width: 450px;
-  height: 250px;
+  width: 420px;
+  height: 210px;
   border-radius: 5px 40px;
   box-shadow: 3px 3px 5px black; }
 
