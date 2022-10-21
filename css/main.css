@@ -66,7 +66,7 @@ main #eslogan {
 
 main #p-index {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-shadow: 1px 1px 3px black;
   color: #918f8f; }
 
@@ -75,8 +75,8 @@ main .calesita {
 
 main section #img-cel {
   display: flex;
-  width: 420px;
-  height: 210px;
+  width: 400px;
+  height: 200px;
   border-radius: 5px 40px;
   box-shadow: 3px 3px 5px black; }
 
