@@ -9,6 +9,14 @@ body {
 
 main {
 
+  .h1-mobile {
+    font-size: 3rem;
+  }
+
+  .h3-mobile {
+    font-size: 2rem;
+  }
+
   #eslogan {
     display: block;
     text-align: center;
@@ -20,7 +28,7 @@ main {
   
   #p-index {
     font-family: $font3;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 3px $color-shadow;
     color: $color-fondo-nav2;
   }
