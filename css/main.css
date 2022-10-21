@@ -74,9 +74,6 @@ main section #img-cel {
   border-radius: 5px 40px;
   box-shadow: 3px 3px 5px black; }
 
-.footer-1 {
-  display: none; }
-
 /*estilos de nosotros */
 .main-nosotros {
   display: flex;
@@ -183,8 +180,6 @@ div h2 {
   main section .mobile-home {
     display: none; }
   main section .calesita {
-    display: block; }
-  main .footer-1 {
     display: block; }
   /* estilos del carousel */
   main div .carousel {
