@@ -47,20 +47,35 @@ body {
   background-color: #e5ebeb; }
 
 /* estilos del home */
-main .eslogan {
+body {
+  background-color: #e5ebeb; }
+
+main #eslogan {
   display: block;
   text-align: center;
   font-family: "Great Vibes", cursive;
   text-shadow: 1px 1px 3px black;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 0.7rem; }
+
+main #p-index {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px black;
+  color: #918f8f; }
 
 main .calesita {
   display: none; }
 
-main .celpho {
+main section #img-cel {
   display: flex;
-  width: 100%; }
+  width: 450px;
+  height: 250px;
+  border-radius: 5px 40px;
+  box-shadow: 3px 3px 5px black; }
+
+.footer-1 {
+  display: none; }
 
 /*estilos de nosotros */
 .main-nosotros {
@@ -145,11 +160,31 @@ div h2 {
     text-align: center;
     font-family: "Great Vibes", cursive;
     text-shadow: 1px 1px 3px black;
+    font-size: 3rem;
+    margin-top: 0.7rem; }
+  main section .calesita {
+    display: none; }
+  main section #img-cel {
+    display: flex;
+    width: 570px;
+    height: 340px;
+    border-radius: 5px 40px;
+    box-shadow: 3px 3px 5px black; }
+  .footer-1 {
+    display: block; } }
+
+@media screen and (min-width: 992px) {
+  main #eslogan {
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    text-shadow: 1px 1px 3px black;
     font-size: 4rem;
     margin-top: 0.7rem; }
-  main .celpho {
+  main section .mobile-home {
     display: none; }
-  main .calesita {
+  main section .calesita {
+    display: block; }
+  main .footer-1 {
     display: block; }
   /* estilos del carousel */
   main div .carousel {
@@ -167,7 +202,7 @@ div h2 {
       opacity: 60%; }
   /* mq nosotros */ }
 
-@media screen and (min-width: 600px) and (min-width: 761px) {
+@media screen and (min-width: 992px) and (min-width: 761px) {
   .main-nosotros {
     padding: 1rem;
     display: grid;
@@ -194,10 +229,10 @@ div h2 {
     font-family: "Varela Round", sans-serif;
     text-decoration: double; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   /* mq servicios */ }
 
-@media screen and (min-width: 600px) and (min-width: 780px) {
+@media screen and (min-width: 992px) and (min-width: 780px) {
   .main-servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

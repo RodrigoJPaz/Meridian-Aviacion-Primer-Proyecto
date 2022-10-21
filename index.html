@@ -60,76 +60,100 @@
             </div>
           </nav>
     </header>
-    <!-- main carousel -->
-    <main data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <div class="indexcel">
-        <img class="celpho" src="img/indexcel-overlay.jpg" alt="mig15 volando">
-      </div>
-      <div class="calesita">
-        <div id="myCarousel mq-carousel " class="carousel slide mt-6 py-1 mb-0" data-bs-ride="carousel"> 
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- main general -->
+    <main>
+      <section class="main-servicios">
+        <div class="mobile-home">
+          <div>
+              <h1 class="display-2 textogradiente-2"> MERIDIAN </h1>
+              <h3 class="display-4 textogradiente"> AVIACIÓN </h3>
+              <img src="img/foto skecth.png" alt="biplano de epoca por despegar" class="img-uno" id="img-cel" >                
+              <a name="p-uno"><p class="p-uno" id="p-index">  Una Nueva Experiencia.</p></a>
+          </div>
+          <div>
+              <a href="#p-dos" class="nolink"><h3 class="h3-dos display-1 textogradiente"> Compra y venta </h3></a>
+              <img src="img/qsomos.jpg" alt="verificacion de helice prevuelo" class="img-dos " id="img-cel">
+              <a name="p-dos"><p class="p-dos" id="p-index"> Lo mejor del mercado </p></a>
+          </div>
+          <div>
+              <a href="#p-tres" class="nolink"><h3 class="h3-tres display-1 textogradiente"> Asesoramiento y repuestos </h3></a>
+              <img src="img/img_2.jpg" alt="aeronave en vuelo durante atardecer" class="img-tres" id="img-cel">
+              <a name="p-tres"><p class="p-tres" id="p-index"> Todo lo que necesitas y mas </p></a>
+          </div>
+          <div class="d-flex justify-content-center boton">
+              <a href="pages/contacto.html"><button id="my-form-button" class="btn btn-outline-secondary" type="submit"> Contactanos </button></a> 
+          </div>
+        </div>    
+      </section>
+      <!-- main carousel -->
+      <section>
+        <div class="calesita" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <div id="myCarousel mq-carousel " class="carousel slide mt-6 py-1 mb-0" data-bs-ride="carousel"> 
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/foto skecth.png" class="d-block img-center img-fluid" alt="mig15 en pista durante el atardecer">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="#3A3030" />
+              </svg>
+              <div class="container">
+                <div class="carousel-caption text-center d-flex flex-column align-items-center">
+                  <h1 class="display-2 textogradiente-2"> MERIDIAN </h1>
+                  <h3 class="display-4 textogradiente"> AVIACIÓN </h3>
+                  <h4 class="display-6"> UNA NUEVA EXPERIENCIA </h4>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/qsomos.jpg" class="d-block img-center img-fluid" alt="biplano volando">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="#3A3030" />
+              </svg>
+              <div class="container">
+                <div class="carousel-caption text-center d-flex flex-column align-items-center">
+                  <h2 class="display-1 textogradiente">COMPRA Y VENTA </h2>
+                  <h3 class="display-5"> LO MEJOR DEL MERCADO </h3>
+                  <p data-aos="fade-up" data-aos-anchor-placement="center-bottom"><a class="btn btn-lg btn-primary "
+                      href="pages/contacto.html">Contáctanos</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/img_2.jpg" class="d-block img-center img-fluid" alt="chequeo prevuelo de motor de avion">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="#3A3030" />
+              </svg>
+              <div class="container">
+                <div class="carousel-caption text-center d-flex flex-column align-items-center">
+                  <h2 class="display-1 textogradiente"> ASESORAMIENTO Y REPUESTOS </h2>
+                  <h3 class="display-5"> TODO LO QUE NECESITAS Y MAS </h3>
+                  <p data-aos="fade-up" data-aos-anchor-placement="center-bottom"><a class="btn btn-lg btn-primary"
+                      href="pages/contacto.html"> Asesorate! </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/foto skecth.png" class="d-block img-center img-fluid" alt="mig15 en pista durante el atardecer">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="#3A3030" />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-center d-flex flex-column align-items-center">
-                <h1 class="display-2 textogradiente-2"> MERIDIAN </h1>
-                <h3 class="display-4 textogradiente"> AVIACIÓN </h3>
-                <h4 class="display-6"> UNA NUEVA EXPERIENCIA </h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/qsomos.jpg" class="d-block img-center img-fluid" alt="biplano volando">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="#3A3030" />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-center d-flex flex-column align-items-center">
-                <h2 class="display-1 textogradiente">COMPRA Y VENTA </h2>
-                <h3 class="display-5"> LO MEJOR DEL MERCADO </h3>
-                <p data-aos="fade-up" data-aos-anchor-placement="center-bottom"><a class="btn btn-lg btn-primary "
-                    href="pages/contacto.html">Contáctanos</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/img_2.jpg" class="d-block img-center img-fluid" alt="chequeo prevuelo de motor de avion">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="#3A3030" />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-center d-flex flex-column align-items-center">
-                <h2 class="display-1 textogradiente"> ASESORAMIENTO Y REPUESTOS </h2>
-                <h3 class="display-5"> TODO LO QUE NECESITAS Y MAS </h3>
-                <p data-aos="fade-up" data-aos-anchor-placement="center-bottom"><a class="btn btn-lg btn-primary"
-                    href="pages/contacto.html"> Asesorate! </a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </section>
+      <div>
+        <h3 class="animate__animated animate__backInUp" data-aos="fade-up" data-aos-anchor-placement="center-bottom" id="eslogan" > Animate a soñar, animate a Volar...</h3>
       </div>
-    </div>
-    <h3 class="eslogan animate__animated animate__backInUp" data-aos="fade-up" data-aos-anchor-placement="center-bottom"  > Animate a soñar, animate a Volar...</h3>
     </main>
     <!-- footer -->
     <footer>
@@ -153,11 +177,11 @@
           </a>
       </div>  
               
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3 footer-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <h2> © 2022 Todos los Derechos Reservados:</h2>
-            <a class="text-dark" href=""> CAPTAIN | WEBDESING</a>
-        </div>
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3 footer-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h2> © 2022 Todos los Derechos Reservados:</h2>
+          <a class="text-dark" href=""> CAPTAIN | WEBDESING</a>
+      </div>
      </footer>
 
     <!-- JavaScript Bundle with Popper -->

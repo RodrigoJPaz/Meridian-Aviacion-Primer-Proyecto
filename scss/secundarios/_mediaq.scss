@@ -4,8 +4,40 @@
 /* mq index */
 
 @media screen and (min-width:600px) {
+  
     main {
         .eslogan {
+          text-align: center;
+          font-family: $font4;  
+          text-shadow: 1px 1px 3px $color-shadow;
+          font-size: 3rem;
+          margin-top: 0.7rem;
+          }
+
+        
+        section {
+            .calesita {
+                display: none;
+            }
+            #img-cel {
+                display: flex;
+                @include sizes(570px, 340px);
+                border-radius: 5px 40px;
+                box-shadow: 3px 3px 5px $color-shadow;
+              }
+        }
+      
+    }
+    .footer-1 {
+        display: block;
+    }   
+}
+
+@media screen and (min-width:992px) {
+
+    main {
+
+        #eslogan {
           text-align: center;
           font-family: $font4;  
           text-shadow: 1px 1px 3px $color-shadow;
@@ -13,17 +45,26 @@
           margin-top: 0.7rem;
           }
         
-        .celpho {
-            display: none;
+        section {
+            .mobile-home {
+                display: none;
+            }
+        }   
+        
+        section {
+            .calesita {
+            display: block;
+            }
         }
 
-        .calesita {
-            display: block;
-        }
-    }
+    
+    .footer-1 {
+        display: block;
+    }   
+}
+
       
-      
-      /* estilos del carousel */
+/* estilos del carousel */
       main  div .carousel {
           margin-bottom: 6rem; 
         }
@@ -174,5 +215,5 @@
         margin-bottom: 2rem;
         margin-top: 1rem;
     }
-    }}
-
+    }
+}

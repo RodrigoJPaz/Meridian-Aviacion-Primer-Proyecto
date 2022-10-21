@@ -2,23 +2,47 @@
 
 /* estilos del home */
 
+body {        
+  background-color: $color-principal;
+}
+
+
 main {
-  .eslogan {
-  display: block;
-  text-align: center;
-  font-family: $font4;  
-  text-shadow: 1px 1px 3px $color-shadow;
-  font-size: 2rem;
-  margin-top: 0.7rem;
-  }  
+
+  #eslogan {
+    display: block;
+    text-align: center;
+    font-family: $font4;  
+    text-shadow: 1px 1px 3px $color-shadow;
+    font-size: 2.5rem;
+    margin-top: 0.7rem;
+    } 
+  
+  #p-index {
+    font-family: $font3;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px $color-shadow;
+    color: $color-fondo-nav2;
+  }
+
     
   .calesita {
       display: none;
     }
   
-  .celpho {
+  section {
+    #img-cel {
       display: flex;
-      width: 100%;
+      @include sizes(450px, 250px);
+      border-radius: 5px 40px;
+      box-shadow: 3px 3px 5px $color-shadow;
+    }
   }
+  
 }
 
+.footer-1 {
+  display: none;
+}
+
+  
