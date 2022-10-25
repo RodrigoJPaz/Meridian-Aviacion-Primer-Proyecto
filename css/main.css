@@ -6,7 +6,7 @@
 
 /*estilos del nav*/
 .color-nav {
-  background: linear-gradient(to bottom, rgba(105, 113, 114, 0.89), #918f8f, #eaecf1); }
+  background: linear-gradient(to bottom, #697172, #918f8fe1, #eaecf1e3); }
 
 .position {
   position: sticky;
@@ -46,6 +46,16 @@
 body {
   background-color: #e5ebeb; }
 
+html body::-webkit-scrollbar {
+  width: 10px; }
+
+html body::-webkit-scrollbar-track {
+  background: #e5ebeb; }
+
+html body::-webkit-scrollbar-thumb {
+  background-color: #918f8fe1;
+  border-radius: 8px; }
+
 /* estilos del home */
 body {
   background-color: #e5ebeb; }
@@ -68,9 +78,12 @@ main #p-index {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
   text-shadow: 1px 1px 3px black;
-  color: #918f8f; }
+  color: #918f8fe1; }
 
 main .calesita {
+  display: none; }
+
+main .fotos-index {
   display: none; }
 
 main section #img-cel {
@@ -101,7 +114,7 @@ main div .galeria-hover {
 
 /* estilos de servicios */
 .main-servicios div .subtitulo {
-  color: rgba(105, 113, 114, 0.89); }
+  color: #697172; }
   .main-servicios div .subtitulo:hover {
     transform: scale(1.03);
     background: linear-gradient(to right, #318add 20%, #757377 40%, #feffff 60%, #318add 80%);
@@ -136,9 +149,12 @@ main div .galeria-hover {
 
 /* estilos del footer */
 .footer-1 {
-  background: linear-gradient(to bottom, #eaecf1, #918f8f, rgba(105, 113, 114, 0.89));
+  background: linear-gradient(to bottom, #eaecf1e3, #918f8fe1, #697172);
   margin-top: 1rem;
   bottom: 0%; }
+  .footer-1 h4 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 1rem; }
 
 .logos-redes {
   margin: 0.5rem;
@@ -151,7 +167,8 @@ main div .galeria-hover {
 
 .footer-2 {
   background-color: rgba(0, 0, 0, 0.2);
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding: 1rem; }
 
 div h2 {
   font-size: 1rem; }
@@ -173,19 +190,23 @@ div h2 {
     height: 340px;
     border-radius: 5px 40px;
     box-shadow: 3px 3px 5px black; }
-  .footer-1 {
+  main .fotos-index {
     display: block; } }
 
 @media screen and (min-width: 992px) {
   main #eslogan {
+    color: #0e488f;
     text-align: center;
     font-family: "Great Vibes", cursive;
     text-shadow: 1px 1px 3px black;
     font-size: 4rem;
-    margin-top: 0.7rem; }
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem; }
   main section .mobile-home {
     display: none; }
   main section .calesita {
+    display: block; }
+  main .fotos-index {
     display: block; }
   /* estilos del carousel */
   main div .carousel {

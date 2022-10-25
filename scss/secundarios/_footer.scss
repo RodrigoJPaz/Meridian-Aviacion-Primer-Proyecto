@@ -6,6 +6,11 @@
     background: linear-gradient(to bottom, $color-fondo-nav3, $color-fondo-nav2, $color-fondo-nav);
     margin-top: 1rem;
     bottom: 0%;
+
+    h4 {
+        font-family: $font;
+        font-size: 1rem;
+    }
     }
 
 .logos-redes {
@@ -24,6 +29,7 @@
 .footer-2 {
         background-color:   rgba(0, 0, 0, 0.2);
         font-size: 1rem;
+        padding: 1rem;
 
     }
 
