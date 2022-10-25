@@ -1,0 +1,43 @@
+.direccion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: 2fr ;
+    grid-template-areas:
+        "h2 h2"
+        "ul mapa"
+        "ul mapa";
+
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.direccion h2 {
+    display: flex;
+    grid-area: h2;
+    text-align: center;
+    font-family: $font4;
+    font-size: 4rem;
+    text-shadow: 1px 1px 3px $color-shadow;
+    margin-top: 4rem;
+    
+}
+
+.direccion ul {
+    grid-area: ul;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: $font3;
+   
+   
+}
+
+.direccion .mapa {
+    grid-area: mapa;
+    border-radius: 5px 40px;
+    width: 80%;
+    height: 80%;
+    box-shadow: 3px 3px 5px $color-shadow;
+
+}
