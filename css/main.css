@@ -147,6 +147,7 @@ main div .galeria-hover {
 .main-servicios div .nolink {
   text-decoration: none; }
 
+/* estilo contactos */
 .direccion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -348,7 +349,7 @@ div h2 {
 /*gradiente del texto*/
 .textogradiente {
   display: flex;
-  filter: drop-shadow(1px 1px 2px black);
+  filter: drop-shadow(1px 1px 2px white);
   font-size: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
