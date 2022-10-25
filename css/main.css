@@ -170,7 +170,8 @@ main div .galeria-hover {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style-type: circle; }
 
 .direccion .mapa {
   grid-area: mapa;
