@@ -17,7 +17,8 @@
     margin: 0.5rem0;
     font-size: 1.2rem;
     font-family: "Varela Round", sans-serif;
-    filter: drop-shadow(1px 1px 1px black); }
+    filter: drop-shadow(1px 1px 1px black);
+    letter-spacing: 0.1rem; }
     .position nav div .nav-text-style a {
       color: aliceblue; }
     .position nav div .nav-text-style:hover {
@@ -171,7 +172,8 @@ main div .galeria-hover {
   flex-direction: column;
   font-size: 1.5rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  list-style-type: circle; }
+  list-style-type: circle;
+  letter-spacing: 0.1rem; }
 
 .direccion .mapa {
   grid-area: mapa;
@@ -350,7 +352,7 @@ div h2 {
 /*gradiente del texto*/
 .textogradiente {
   display: flex;
-  filter: drop-shadow(1px 1px 2px white);
+  filter: drop-shadow(1px 1px 2px #38058a);
   font-size: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
