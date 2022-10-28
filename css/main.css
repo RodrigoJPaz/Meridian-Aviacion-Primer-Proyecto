@@ -17,7 +17,7 @@
     margin: 0.5rem0;
     font-size: 1.2rem;
     font-family: "Varela Round", sans-serif;
-    filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(0.5px 0.5px 1px black);
     letter-spacing: 0.1rem; }
     .position nav div .nav-text-style a {
       color: aliceblue; }
@@ -37,7 +37,7 @@
 
 /* logo*/
 #logo {
-  filter: drop-shadow(0.5px 0.5px 0.5px #020202);
+  filter: drop-shadow(0.2px 0.2px 0.5px #020202);
   transition: 1s;
   margin-right: 3rem; }
   #logo:hover {
@@ -47,15 +47,16 @@
 body {
   background-color: #e5ebeb; }
 
+/* estilo barra scrol */
 html body::-webkit-scrollbar {
-  width: 10px; }
+  width: 8px; }
 
 html body::-webkit-scrollbar-track {
   background: #e5ebeb; }
 
 html body::-webkit-scrollbar-thumb {
   background-color: #003768;
-  border-radius: 8px; }
+  border-radius: 4px; }
 
 /* estilos del home */
 body {
@@ -132,10 +133,7 @@ main div .galeria-hover {
   text-align: justify;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.2rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin: 3rem;
   letter-spacing: 0.15; }
 
 .main-servicios div img {
@@ -143,7 +141,9 @@ main div .galeria-hover {
   width: 250px;
   height: 450px;
   border-radius: 5px 40px;
-  box-shadow: 3px 3px 5px black; }
+  box-shadow: 3px 3px 5px black;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem; }
 
 .main-servicios div .nolink {
   text-decoration: none; }
@@ -184,7 +184,8 @@ main div .galeria-hover {
 
 .form-color {
   border-color: #918f8fe1;
-  background-color: #e5ebeb !important;
+  filter: drop-shadow(1px 1px 2px #38058a) !important;
+  background-color: aliceblue !important;
   color: #003768 !important;
   transition: 0.5s !important; }
   .form-color:hover {

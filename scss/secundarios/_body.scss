@@ -6,12 +6,17 @@ body {
     
 }
 
+/* estilo barra scrol */
+
 html body::-webkit-scrollbar {
-    width: 10px; }
+    width: 8px; 
+  }
   
   html body::-webkit-scrollbar-track {
-    background: $color-principal }
+    background: $color-principal 
+  }
   
   html body::-webkit-scrollbar-thumb {
     background-color: $color-p;
-    border-radius: 8px; }
+    border-radius: 4px;
+  }

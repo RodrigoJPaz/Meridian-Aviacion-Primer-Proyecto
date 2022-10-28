@@ -47,7 +47,8 @@
 
 .form-color {
     border-color: $color-fondo-nav2;
-    background-color: $color-principal  !important;
+    filter:drop-shadow(1px 1px 2px rgb(56, 5, 138)) !important;
+    background-color: $color-text-hover  !important;
     color: $color-p !important;
     transition: 0.5s !important;
 
