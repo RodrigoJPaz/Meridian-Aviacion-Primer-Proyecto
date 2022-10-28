@@ -2,11 +2,11 @@
 
 .textogradiente {
     display: flex;
-    filter:drop-shadow(1px 1px 2px rgb(56, 5, 138));
+    filter:drop-shadow(1px 1px 2px black);
     font-size: 4rem;
     font-family: $font3;
     text-align: center;
-    background: linear-gradient(to left, #454a50 20%, #757377 40%, #f5f5f5 60%, #454a50 80%);
+    background: linear-gradient(to left, $color-meridian 20%, #757377 40%, #f5f5f5 60%, $color-meridian 80%);
     background-size: 200% auto;
     text-decoration: bold;
     color: $color-shadow;
@@ -39,6 +39,26 @@
       @keyframes shine {
     to {
       background-position: 200% center; } }
+
+      .textogradiente-3 {
+        display: flex;
+        filter:drop-shadow(1px 1px 2px black);
+        font-size: 4rem;
+        font-family: $font3;
+        text-align: center;
+        background: linear-gradient(to left, $color-h2 20%, #757377 40%, #f5f5f5 60%, $color-h2 80%);
+        background-size: 200% auto;
+        text-decoration: bold;
+        color: $color-shadow;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 5s linear infinite;
+         }
+    
+        @keyframes shine {
+      to {
+        background-position: 200% center; } }
 
 
 

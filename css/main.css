@@ -182,6 +182,15 @@ main div .galeria-hover {
   height: 80%;
   box-shadow: 3px 3px 5px black; }
 
+.form-color {
+  border-color: #918f8fe1;
+  background-color: #e5ebeb !important;
+  color: #003768 !important;
+  transition: 0.5s !important; }
+  .form-color:hover {
+    filter: drop-shadow(1px 1px 2px #38058a);
+    transform: scale(1.04); }
+
 /* estilos del footer */
 .footer-1 {
   background: linear-gradient(to bottom, #eaecf1e3, #918f8fe1, #697172);
@@ -352,11 +361,11 @@ div h2 {
 /*gradiente del texto*/
 .textogradiente {
   display: flex;
-  filter: drop-shadow(1px 1px 2px #38058a);
+  filter: drop-shadow(1px 1px 2px black);
   font-size: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
-  background: linear-gradient(to left, #454a50 20%, #757377 40%, #f5f5f5 60%, #454a50 80%);
+  background: linear-gradient(to left, #0e488f 20%, #757377 40%, #f5f5f5 60%, #0e488f 80%);
   background-size: 200% auto;
   text-decoration: bold;
   color: black;
@@ -376,6 +385,25 @@ div h2 {
   font-size: 6rem;
   text-align: center;
   background: linear-gradient(to left, #0e488f 20%, #7273ad 40%, #cdccdf 60%, #0e488f 80%);
+  background-size: 200% auto;
+  text-decoration: bold;
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite; }
+
+@keyframes shine {
+  to {
+    background-position: 200% center; } }
+
+.textogradiente-3 {
+  display: flex;
+  filter: drop-shadow(1px 1px 2px black);
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  background: linear-gradient(to left, #4f4f53 20%, #757377 40%, #f5f5f5 60%, #4f4f53 80%);
   background-size: 200% auto;
   text-decoration: bold;
   color: black;

@@ -44,3 +44,17 @@
     box-shadow: 3px 3px 5px $color-shadow;
 
 }
+
+.form-color {
+    border-color: $color-fondo-nav2;
+    background-color: $color-principal  !important;
+    color: $color-p !important;
+    transition: 0.5s !important;
+
+    &:hover {
+        filter:drop-shadow(1px 1px 2px rgb(56, 5, 138));
+        transform: scale(1.04);
+    }
+
+
+}
